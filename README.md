@@ -33,7 +33,7 @@
 - setState
   - Asynchronous, but happens pretty fast
   - Accepts a callback which is called when the `setState` operation is complete
-- Lifecycle
+- [Lifecycle](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
   - Mounting
     - constructor
     - getDerivedStateFromProps _(uncommon use case)_
