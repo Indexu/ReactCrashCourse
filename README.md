@@ -33,7 +33,7 @@
 - setState
   - Asynchronous, but happens pretty fast
   - Accepts a callback which is called when the `setState` operation is complete
-- Lifecycle
+- [Lifecycle](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
   - Mounting
     - constructor
     - getDerivedStateFromProps _(uncommon use case)_
@@ -236,7 +236,7 @@
 
 - Linter for ECMAScript (JavaScript)
 - Enforces coding rules
-- The Airbnb config is what we will be using
+- The [Airbnb config](https://github.com/airbnb/javascript) is what we will be using
   - With minor adjustments
 
 ## Prettier
@@ -247,8 +247,10 @@
 - Makes Eslint scream less at you
 - Eslint integration
   - Runs Prettier, then runs `eslint --fix`
-  - Not 100% flawless. Conflicts between Prettier and the Eslint config might happen.
+  - Not flawless. Conflicts between Prettier and the Eslint config might happen.
     - The VSCode extension only runs a single pass of eslint. [This is a known issue](https://github.com/Microsoft/vscode-eslint/issues/154)
+  - Don't think we will use the integration
+    - Instead we will overwrite the Airbnb Eslint config with a Prettier config to minimize linting errors
 
 ## Jest
 
