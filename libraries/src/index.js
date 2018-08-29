@@ -4,10 +4,7 @@ import ReactDOM from 'react-dom';
 import './GlobalStyles';
 import App from './App';
 
-const wrapper = document.getElementById('root');
-if (wrapper) {
-  ReactDOM.render(<App title="Libraries" />, wrapper);
-}
+ReactDOM.render(<App title="Libraries" />, document.getElementById('root'));
 
 if (module.hot) {
   module.hot.accept();

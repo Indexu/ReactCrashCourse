@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Input = styled.input`
-  color: rgb(100, 100, 100);
+  color: rgb(220, 220, 220);
   font-size: 1.5em;
-  border: 1px solid rgb(200, 200, 200);
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 0.1em;
+  background-color: rgb(20, 20, 20);
   display: block;
   margin: 0 auto;
 `;

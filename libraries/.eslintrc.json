@@ -13,14 +13,34 @@
     }
   },
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "babel"],
   "rules": {
+    "linebreak-style": 0,
+    "no-unused-expressions": 0,
+    "no-confusing-arrow": 0,
     "prettier/prettier": "error",
     "react/jsx-filename-extension": false,
-    "no-unused-expressions": 0,
     "max-len": ["error", { "code": 120, "ignoreUrls": true }],
-    "no-confusing-arrow": 0,
     "curly": ["error", "all"],
-    "no-tabs": "error"
+    "no-tabs": "error",
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["label"],
+        "required": {
+          "some": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelComponents": ["label"],
+        "labelAttributes": ["htmlFor"],
+        "controlComponents": ["input"],
+        "depth": 3
+      }
+    ]
   }
 }

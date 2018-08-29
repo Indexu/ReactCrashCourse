@@ -3,10 +3,12 @@ import { shallow } from 'enzyme';
 
 import App from '../App';
 
+const TITLE = 'Test';
+
 describe('App', () => {
   it('should render without throwing an error', () => {
     // Arrange
-    const wrapper = shallow(<App />).dive();
+    const wrapper = shallow(<App title={TITLE} />);
 
     // Act
 
@@ -24,7 +26,7 @@ describe('App', () => {
       },
     };
 
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<App title={TITLE} />);
 
     // Act
     wrapper.instance().handleOnChange(mockEvent);

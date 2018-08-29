@@ -6,9 +6,10 @@ injectGlobal`
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Arial';
   }
 
   body {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(50, 50, 50);
   }
 `;
