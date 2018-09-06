@@ -5,6 +5,7 @@ import axios from 'axios';
 
 import BasicInput from './components/BasicInput/BasicInput';
 import CurrencyList from './components/CurrencyList/CurrencyList';
+import FancyButton from './components/FancyButton/FancyButton';
 
 const Container = styled.div`
   margin: 0 auto;
@@ -33,59 +34,6 @@ const Title = styled.h1`
 const Paragraph = styled.p`
   color: rgb(220, 220, 220);
   text-align: center;
-`;
-
-// Button CSS: https://codemyui.com/ghost-button-animation/
-const fancyButtonColor = '#0068b2';
-const FancyButton = styled.button`
-  margin: 1em 0;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  width: 270px;
-  font-weight: bold;
-  padding: 14px 0px;
-  border: 3px solid ${fancyButtonColor};
-  border-radius: 2px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  background-color: rgb(20, 20, 20);
-  color: rgb(220, 220, 220);
-
-  &:before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: ${fancyButtonColor};
-    z-index: -1;
-  }
-
-  &:hover {
-    &:before {
-      -webkit-transition: 0.5s all ease;
-      transition: 0.5s all ease;
-      left: 0;
-      right: 0;
-      opacity: 1;
-    }
-  }
-  &:focus {
-    &:before {
-      -webkit-transition: 0.5s all ease;
-      transition: 0.5s all ease;
-      left: 0;
-      right: 0;
-      opacity: 1;
-    }
-  }
 `;
 
 class App extends React.Component {
