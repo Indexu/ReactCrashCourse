@@ -1,0 +1,59 @@
+Auto Close Tag
+	Optional
+	~2M downloads
+	As the name implies, it auto-closes HTML and JSX tags
+
+Auto Rename Tag
+	Recommended
+	~1M downloads
+	As the name implies, it renames the matching closing/opening HTML/JSX tag
+
+Bracket Pair Colorizer
+	Recommended
+	~2.7M downloads
+	Colors matching curly/square brackets and parentheses
+
+ESlint
+	Required
+	~12.8M downloads
+	A linter that enforces our coding style
+	
+Git History
+	Recommended
+	~3.7M downloads
+	See the Git history of the repo or a file in VS Code. Compare changes between commits.
+
+GitLens
+	Recommended
+	~8.7M downloads
+	A handy tool to improve VS Code's Git capabilities
+
+Import Cost
+	Optional
+	~537K downloads
+	Calculates the import cost of a specific npm package. Sometimes doesn't work. Can be wrong due to tree-shaking (we attempt eliminate code from libraries we don't use via Webpack)
+
+Prettier
+	Required
+	~4M downloads
+	Auto-format your code according to our coding rules
+
+Settings Sync
+	Very optional
+	~2M downloads
+	Sync your settings and installed extensions in VS Code via GitHub Gists. If you want to use the same settings/extensions at home in VS Code or another machine.
+
+vscode-icons
+	Recommended
+	~9.3M downloads
+	Add some helpful icons to make VS Code look nicer
+
+vscode-styled-components
+	Recommended
+	~300K downloads
+	Adds SASS syntax highlighting, CSS intellisense and syntax error reporting to styled-components 
+
+XML Tools
+	Optional
+	~2M downloads
+	Formatting and other nice stuff for XML files. Use it if you work with XML files.
